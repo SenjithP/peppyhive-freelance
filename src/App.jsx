@@ -15,7 +15,7 @@ const App = () => {
     }
   };
   const handleInstagramClick = () => {
-    window.open("https://www.instagram.com/__nino__enfermo______?igsh=MWZ6NmFqMnZvd2N5NQ==", "_blank");
+    window.open("https://www.instagram.com/__cloud.s______?igsh=MWZ6cTF2OGFsdWo5Yw==", "_blank");
   };
   const handleWhatsappClick = () => {
     window.open("https://wa.me/9421533464", "_blank");
