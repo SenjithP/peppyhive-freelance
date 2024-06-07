@@ -8,12 +8,7 @@ import { motion } from "framer-motion";
 import "./App.css";
 
 const App = () => {
-  const scrollToFooter = () => {
-    const footer = document.getElementById("footer");
-    if (footer) {
-      footer.scrollIntoView({ behavior: "smooth" });
-    }
-  };
+  
   const handleInstagramClick = () => {
     window.open(
       "https://www.instagram.com/__cloud.s______?igsh=MWZ6cTF2OGFsdWo5Yw==",
@@ -65,7 +60,6 @@ const App = () => {
             At peppyhive, we believe any dreams can be achieved if we work
             towards it single step at a time.
           </p>
-          <button onClick={scrollToFooter}>Contact Us</button>
           <img
             src="https://images.ctfassets.net/17si5cpawjzf/5sVSqbCFE6oYMkmS7VBbuY/bdba1dd03501a4bc68614a000de0a9a9/mechanical-design-sw-is1352825017-og-1200x630.jpg"
             alt="Peppyhive"
@@ -167,7 +161,7 @@ const App = () => {
           </motion.div>
         </motion.div>
         <hr />
-        <footer id="footer" className="footer">
+        <footer className="footer">
           <h1>"Your ideas and our hustle. - As simple as that"</h1>
 
           <div className="footer-content">
