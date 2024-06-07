@@ -1,0 +1,496 @@
+/* Existing CSS code here */
+
+.navbar {
+  padding: 50px 120px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: black;
+}
+
+.navbar h1 {
+  margin: 0;
+}
+
+.container {
+  padding: 20px 120px;
+}
+
+.header {
+  margin: 15px 0px 70px 0px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.section1 {
+  margin: 70px 0px;
+}
+
+.header h1 {
+  font-size: 2.5em;
+  margin-bottom: 0.5em;
+}
+
+.header p {
+  font-size: 1.2em;
+  margin: 15px 0px;
+  width: 580px;
+  text-align: center;
+}
+
+.header button {
+  background-color: black;
+  color: white;
+  padding: 0.5em 1em;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  font-size: 1em;
+}
+
+.header img {
+  width: 100%;
+  height: auto;
+  margin-top: 50px;
+  border-radius: 0.5em;
+}
+
+.section1 .heading {
+  text-align: center;
+  margin-bottom: 70px;
+}
+
+.section1 .heading h1 {
+  font-size: 2em;
+  margin-bottom: 0.5em;
+}
+
+.section1 .heading p {
+  font-size: 1.2em;
+  color: #777;
+}
+
+.sectiona,
+.sectionb {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 70px;
+}
+
+.description,
+.image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  flex: 1;
+}
+
+.description h3 {
+  font-size: 1.5em;
+  margin-bottom: 0.5em;
+}
+
+.description p {
+  font-size: 1.1em;
+  margin-bottom: 0.5em;
+}
+
+.image img {
+  width: 100%;
+  height: auto;
+  border-radius: 0.5em;
+}
+
+.section2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: 70px 0px;
+}
+
+.section2 .heading h1 {
+  font-size: 2em;
+  margin-bottom: 0.5em;
+}
+
+.section2 .heading p {
+  font-size: 1.2em;
+  color: #777;
+}
+
+.section2 .heading {
+  text-align: center;
+  margin-bottom: 70px;
+}
+
+.headinga {
+  width: 500px;
+  text-align: center;
+  margin-bottom: 70px;
+}
+
+.headinga h1 {
+  font-size: 2em;
+  margin-bottom: 0.5em;
+}
+
+.headinga p {
+  font-size: 1.2em;
+  color: #777;
+}
+
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  gap: 20px; /* Increased gap for better spacing */
+  padding: 10px; /* Add padding to the container */
+}
+
+.card {
+  background: #fff; /* Changed to white for better contrast */
+  border: 2px solid #ddd; /* Border with more visibility */
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Slightly larger shadow */
+  padding: 20px;
+  width: 30%;
+  box-sizing: border-box;
+  transition: transform 0.2s; /* Add transition for hover effect */
+}
+
+.card:hover {
+  transform: translateY(-5px); /* Lift card slightly on hover */
+}
+
+.card h3 {
+  margin: 8px 0px;
+  font-size: 1.2em;
+}
+
+.card p {
+  font-size: 1em;
+  line-height: 1.4;
+}
+
+.footer {
+  margin: 70px 0px 10px 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  flex-direction: column;
+}
+
+.social-icons {
+  font-size: x-large;
+  margin: 40px 0px;
+  width: 300px;
+  display: flex;
+  justify-content: space-between;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 1024px) {
+  .navbar,
+  .container {
+    padding: 20px;
+  }
+
+  .sectiona,
+  .sectionb {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .sectiona .image,
+  .sectionb .image {
+    margin-bottom: 20px;
+  }
+
+  .headinga,
+  .heading {
+    width: 100%;
+    padding: 0 20px;
+  }
+
+  .header p,
+  .section2 .heading p,
+  .headinga p,
+  .section1 .heading p {
+    width: 100%;
+  }
+
+  .cards {
+    justify-content: center;
+  }
+
+  .card {
+    width: 45%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .navbar {
+    padding: 10px 20px;
+  }
+
+  .navbar h1,
+  .navbar h2 {
+    font-size: small;
+  }
+
+  .container {
+    padding: 10px;
+  }
+
+  .cards {
+    justify-content: center;
+  }
+
+  .card {
+    width: 100%;
+  }
+
+  .header button {
+    width: 100%;
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .navbar {
+    flex-direction: column;
+    padding: 5px 10px;
+  }
+
+  .navbar h1 {
+    font-size: 1em;
+  }
+
+  .navbar h2 {
+    font-size: 0.9em;
+  }
+
+  .header h1,
+  .section1 .heading h1,
+  .section2 .heading h1,
+  .headinga h1 {
+    font-size: 1.5em;
+  }
+
+  .header p,
+  .section2 .heading p,
+  .headinga p,
+  .section1 .heading p,
+  .description p {
+    font-size: 0.9em;
+  }
+
+  .header button {
+    padding: 0.5em;
+  }
+}
+/* Animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Navbar animation */
+.navbar {
+  padding: 50px 120px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: black;
+}
+
+/* Header animation */
+.header {
+  margin: 15px 0px 70px 0px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Button hover animation */
+.header button {
+  background-color: black;
+  color: white;
+  padding: 0.5em 1em;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  font-size: 1em;
+  transition: background-color 0.3s ease;
+}
+
+.header button:hover {
+  background-color: #333;
+}
+
+/* Image animation */
+.header img {
+  width: 100%;
+  height: auto;
+  margin-top: 50px;
+  border-radius: 0.5em;
+}
+
+/* Section headings animation */
+.section1 .heading,
+.section2 .heading {
+  text-align: center;
+  margin-bottom: 70px;
+}
+
+/* Section animations */
+.section1,
+.section2,
+.footer {
+  animation: fadeIn 1.5s ease-out;
+}
+
+/* Cards animation */
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  gap: 20px;
+  padding: 10px;
+}
+
+.card {
+  background: #fff;
+  border: 2px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  width: 30%;
+  box-sizing: border-box;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+@media screen and (max-width: 1024px) {
+  .navbar,
+  .container {
+    padding: 20px;
+  }
+
+  .section1,
+  .section2,
+  .footer {
+    padding: 20px;
+  }
+
+  .sectiona,
+  .sectionb {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .sectiona .image,
+  .sectionb .image {
+    margin-bottom: 20px;
+  }
+
+  .headinga,
+  .heading {
+    width: 100%;
+    padding: 0 20px;
+  }
+
+  .header p,
+  .section2 .heading p,
+  .headinga p,
+  .section1 .heading p {
+    width: 100%;
+  }
+
+  .cards {
+    justify-content: center;
+  }
+
+  .card {
+    width: 45%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .navbar {
+    padding: 10px 20px;
+  }
+
+  .navbar h1,
+  .navbar h2 {
+    font-size: small;
+  }
+
+  .container {
+    padding: 10px;
+  }
+
+  .cards {
+    justify-content: center;
+  }
+
+  .card {
+    width: 100%;
+  }
+
+  .header button {
+    width: 100%;
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .navbar {
+    flex-direction: column;
+    padding: 5px 10px;
+  }
+
+  .navbar h1 {
+    font-size: 1em;
+  }
+
+  .navbar h2 {
+    font-size: 0.9em;
+  }
+
+  .header h1,
+  .section1 .heading h1,
+  .section2 .heading h1,
+  .headinga h1 {
+    font-size: 1.5em;
+  }
+
+  .header p,
+  .section2 .heading p,
+  .headinga p,
+  .section1 .heading p,
+  .description p {
+    font-size: 0.9em;
+  }
+
+  .header button {
+    padding: 0.5em;
+  }
+}
+
