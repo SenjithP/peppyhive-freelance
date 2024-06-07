@@ -7,20 +7,23 @@ import { motion } from "framer-motion";
 
 import "./App.css";
 
-const App = () => { 
-    const scrollToFooter = () => {
+const App = () => {
+  const scrollToFooter = () => {
     const footer = document.getElementById("footer");
     if (footer) {
       footer.scrollIntoView({ behavior: "smooth" });
     }
   };
   const handleInstagramClick = () => {
-    window.open("https://www.instagram.com/__cloud.s______?igsh=MWZ6cTF2OGFsdWo5Yw==", "_blank");
+    window.open(
+      "https://www.instagram.com/__cloud.s______?igsh=MWZ6cTF2OGFsdWo5Yw==",
+      "_blank"
+    );
   };
   const handleWhatsappClick = () => {
     window.open("https://wa.me/9421533464", "_blank");
   };
- 
+
   const cardData = [
     {
       title: "Projects We Dominate",
@@ -50,16 +53,6 @@ const App = () => {
   ];
   return (
     <>
-      <motion.nav
-        className="navbar"
-        initial={{ opacity: 0, y: -50 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.5 }}
-      >
-        <h1>peppyhive</h1>
-        <h2>Yep!! You landed right</h2>
-      </motion.nav>
-
       <div className="container">
         <motion.div
           className="header"
@@ -174,13 +167,13 @@ const App = () => {
           </motion.div>
         </motion.div>
         <hr />
-        <footer  id="footer" className="footer">
+        <footer id="footer" className="footer">
           <h1>"Your ideas and our hustle. - As simple as that"</h1>
 
           <div className="footer-content">
             <div className="social-icons">
               <FaWhatsapp onClick={handleWhatsappClick} />
-              <FaInstagram onClick={handleInstagramClick}  />
+              <FaInstagram onClick={handleInstagramClick} />
               <FiFacebook />
             </div>
             <p>@__nino__enfermo______</p>

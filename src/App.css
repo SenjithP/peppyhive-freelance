@@ -1,17 +1,5 @@
 /* Existing CSS code here */
 
-.navbar {
-  padding: 50px 120px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  color: black;
-}
-
-.navbar h1 {
-  margin: 0;
-}
-
 .container {
   padding: 20px 120px;
 }
@@ -195,7 +183,6 @@
 }
 
 @media screen and (max-width: 1024px) {
-  .navbar,
   .container {
     padding: 20px;
   }
@@ -234,15 +221,6 @@
 }
 
 @media screen and (max-width: 768px) {
-  .navbar {
-    padding: 10px 20px;
-  }
-
-  .navbar h1,
-  .navbar h2 {
-    font-size: small;
-  }
-
   .container {
     padding: 10px;
   }
@@ -262,19 +240,6 @@
 }
 
 @media screen and (max-width: 480px) {
-  .navbar {
-    flex-direction: column;
-    padding: 5px 10px;
-  }
-
-  .navbar h1 {
-    font-size: 1em;
-  }
-
-  .navbar h2 {
-    font-size: 0.9em;
-  }
-
   .header h1,
   .section1 .heading h1,
   .section2 .heading h1,
@@ -304,15 +269,6 @@
     opacity: 1;
     transform: translateY(0);
   }
-}
-
-/* Navbar animation */
-.navbar {
-  padding: 50px 120px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  color: black;
 }
 
 /* Header animation */
@@ -388,7 +344,6 @@
 }
 
 @media screen and (max-width: 1024px) {
-  .navbar,
   .container {
     padding: 20px;
   }
@@ -433,15 +388,6 @@
 }
 
 @media screen and (max-width: 768px) {
-  .navbar {
-    padding: 10px 20px;
-  }
-
-  .navbar h1,
-  .navbar h2 {
-    font-size: small;
-  }
-
   .container {
     padding: 10px;
   }
@@ -461,19 +407,6 @@
 }
 
 @media screen and (max-width: 480px) {
-  .navbar {
-    flex-direction: column;
-    padding: 5px 10px;
-  }
-
-  .navbar h1 {
-    font-size: 1em;
-  }
-
-  .navbar h2 {
-    font-size: 0.9em;
-  }
-
   .header h1,
   .section1 .heading h1,
   .section2 .heading h1,
@@ -493,4 +426,3 @@
     padding: 0.5em;
   }
 }
-
